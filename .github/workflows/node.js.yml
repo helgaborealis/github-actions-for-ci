@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node CI
 
 on: [push]
 
@@ -33,5 +33,5 @@ jobs:
       run: |
         npm install
         npm test
-      
-        
+      env:
+        CI: true
